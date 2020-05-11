@@ -1,0 +1,19 @@
+# Nama    : Fatur Rachman Ardiansyah
+# NIM     : 04319006
+# Prodi   : Teknik Informatika
+
+def inputAngka(message) :
+  while True :
+    try:
+      userInput = int(input(message))
+    except ValueError:
+      print("Maaf, itu bukan angka !")
+      continue
+    else:
+      return userInput
+      break
+#program yang ditampilkan
+angka = inputAngka("masukkan Angka : ")
+
+if type(angka) is int:
+  print("Validasi : Ya itu adalah angka")
